@@ -3,167 +3,134 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Satish Chauhan | Cloud Engineer Portfolio</title>
+<title>Satish Chauhan | Cloud Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Segoe UI', sans-serif;
-    }
-
-    body {
-        background: #0f172a;
-        color: #fff;
-    }
-
-    header {
-        text-align: center;
-        padding: 80px 20px;
-        background: linear-gradient(135deg, #1e3a8a, #1e3a8a);
-    }
-
-    header h1 {
-        font-size: 3em;
-    }
-
-    header p {
-        margin-top: 10px;
-        font-size: 1.2em;
-        opacity: 0.9;
-    }
-
-    .section {
-        padding: 60px 20px;
-        max-width: 1000px;
-        margin: auto;
-    }
-
-    h2 {
-        text-align: center;
-        margin-bottom: 40px;
-        color: #38bdf8;
-    }
-
-    .about {
-        text-align: center;
-        line-height: 1.6;
-        font-size: 1.1em;
-    }
-
-    .skills {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .skill {
-        padding: 10px 20px;
-        background: #1e293b;
-        border-radius: 20px;
-        transition: 0.3s;
-        cursor: default;
-    }
-
-    .skill:hover {
-        background: #38bdf8;
-        color: #000;
-        transform: scale(1.1);
-    }
-
-    .cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-    }
-
-    .card {
-        background: #1e293b;
-        padding: 20px;
-        border-radius: 10px;
-        transition: 0.3s;
-    }
-
-    .card:hover {
-        transform: translateY(-8px);
-        background: #334155;
-    }
-
-    footer {
-        text-align: center;
-        padding: 30px;
-        background: #020617;
-        font-size: 0.9em;
-        opacity: 0.7;
-    }
+body { margin:0; font-family:'Poppins',sans-serif; background:linear-gradient(135deg,#0f172a,#1e293b); color:#e2e8f0; }
+header { text-align:center; padding:60px 20px; }
+header h1 { font-size:3em; margin:0; color:#38bdf8; }
+header p { font-size:1.2em; opacity:0.8; }
+nav { display:flex; justify-content:center; gap:20px; padding:15px; background:rgba(0,0,0,0.3); backdrop-filter:blur(10px); }
+nav a { color:#38bdf8; text-decoration:none; font-weight:500; }
+nav a:hover { color:white; }
+section { max-width:1000px; margin:auto; padding:40px 20px; }
+.card { background:rgba(30,41,59,0.7); padding:25px; border-radius:15px; margin-bottom:25px; box-shadow:0 10px 30px rgba(0,0,0,0.4); transition:0.3s; }
+.card:hover { transform:translateY(-5px); }
+h2 { color:#38bdf8; }
+ul { padding-left:20px; }
+footer { text-align:center; padding:20px; background:rgba(0,0,0,0.3); }
+.btn { display:inline-block; margin-top:10px; padding:10px 20px; background:#38bdf8; color:black; border-radius:25px; text-decoration:none; font-weight:bold; }
+.btn:hover { background:white; }
+.link { color:#38bdf8; text-decoration:none; }
+.link:hover { text-decoration:underline; }
 </style>
 </head>
-
 <body>
 
 <header>
-    <h1>Satish Chauhan</h1>
-    <p>Cloud Engineer | AWS | DevOps Enthusiast</p>
+  <h1>Satish Chauhan</h1>
+  <p>Cloud Engineer | System Administrator</p>
+  <a class="btn" href="#contact">Contact Me</a>
 </header>
 
-<section class="section about">
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#certifications">Certifications</a>
+</nav>
+
+<section id="about">
+  <div class="card">
     <h2>About Me</h2>
-    <p>
-        I am a Cloud Engineer with <b>2 years of experience</b> in IT and cloud technologies.
-        I started my career as a <b>System Administrator</b> working with 
-        <b>HDFC Bank</b>, and recently transitioned into cloud engineering.
-    </p>
-    <p>
-        I specialize in building and managing scalable infrastructure using modern cloud tools and Linux systems.
-    </p>
+    <p>Linux & AWS certified engineer with 2+ years of hands-on experience in system administration, networking, and cloud services. Skilled in troubleshooting, infrastructure deployment, and production support.</p>
+  </div>
 </section>
 
-<section class="section">
-    <h2>Skills</h2>
-    <div class="skills">
-        <div class="skill">AWS</div>
-        <div class="skill">GitHub</div>
-        <div class="skill">Docker</div>
-        <div class="skill">Linux</div>
-        <div class="skill">Red Hat</div>
-        <div class="skill">Debian</div>
-        <div class="skill">Cloud Infrastructure</div>
-        <div class="skill">System Administration</div>
-    </div>
+<section id="skills">
+  <div class="card">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>AWS: EC2, S3, IAM, VPC, CloudWatch</li>
+      <li>Linux: RHEL, CentOS, Ubuntu, systemctl, cron</li>
+      <li>Networking: TCP/IP, DNS, DHCP, Subnetting</li>
+      <li>Tools: Docker, ServiceNow, RDP, VNC</li>
+      <li>Virtualization: VMware, KVM</li>
+    </ul>
+  </div>
 </section>
 
-<section class="section">
-    <h2>Certifications</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>AWS Certification</h3>
-            <p>Certified in AWS cloud technologies and services.</p>
-        </div>
-        <div class="card">
-            <h3>Red Hat Certification</h3>
-            <p>Certified in Linux system administration and Red Hat environments.</p>
-        </div>
-    </div>
+<section id="projects">
+  <div class="card">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        AWS EC2 Web Hosting with Nginx - 
+        <a class="link" href="https://github.com/satishchauhan5/Static_Website_AWSEC2Instance.git" target="_blank">View Project</a>
+      </li>
+      <li>
+        Personal Portfolio Website - 
+        <a class="link" href="https://github.com/satishchauhan5/satishchauhan5.github.io.git" target="_blank">View Project</a>
+      </li>
+    </ul>
+  </div>
 </section>
 
-<section class="section">
+<section id="experience">
+  <div class="card">
     <h2>Experience</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>System Administrator - Wipro</h3>
-            <p>Worked with HDFC Bank client managing systems, servers, and enterprise environments.</p>
-        </div>
-        <div class="card">
-            <h3>Cloud Engineer</h3>
-            <p>Transitioned into cloud role focusing on AWS, containerization, and scalable solutions.</p>
-        </div>
-    </div>
+
+    <p><strong>System Administrator - NeoSoft Technology (Jan 2026 - Present)</strong></p>
+    <ul>
+      <li>Managed Linux & Windows servers</li>
+      <li>Configured Apache & Nginx web servers</li>
+      <li>Handled ISP and network connectivity issues</li>
+      <li>Worked on Nutanix VM provisioning & monitoring</li>
+      <li>Resolved LAN/WAN and access point issues</li>
+    </ul>
+
+    <p><strong>IT Support Engineer - CMS IT Services (Apr 2025 - Nov 2025)</strong></p>
+    <ul>
+      <li>Provided Linux troubleshooting support</li>
+      <li>Resolved IP and network connectivity issues</li>
+    </ul>
+
+    <p><strong>Desktop Support Engineer - Progressive Infovision (Jun 2023–Jan 2025)</strong></p>
+    <ul>
+      <li>Managed Symantec Endpoint Protection</li>
+      <li>Resolved tickets using ServiceNow</li>
+      <li>Handled malware removal and security compliance</li>
+    </ul>
+
+  </div>
+</section>
+
+<section id="certifications">
+  <div class="card">
+    <h2>Certifications</h2>
+    <ul>
+      <li>AWS Solutions Architect Associate</li>
+      <li>RHCSA (Red Hat Certified System Administrator)</li>
+      <li>Linux Training - Seven Mentor (Pune)</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="card">
+    <h2>Contact</h2>
+    <p>Email: <a class="link" href="mailto:satishchauhan341@gmail.com">satishchauhan341@gmail.com</a></p>
+    <p>LinkedIn: <a class="link" href="https://linkedin.com/in/satishchauhan" target="_blank">linkedin.com/in/satishchauhan</a></p>
+    <p>Location: Mumbai, India</p>
+     <p>Mobile No: +917348730502</p>
+  </div>
 </section>
 
 <footer>
-    © 2026 Satish Chauhan | Cloud Engineer Portfolio
+  <p>© 2026 Satish Chauhan | Cloud Engineer</p>
 </footer>
 
 </body>
